@@ -9,7 +9,9 @@
 		Gallery,
 		GradientButton 
 	} from 'flowbite-svelte'
-	import { LogoApple, LogoTux, LogoWindows } from "svelte-ionicons"
+	import { Footer, FooterCopyright, FooterLinkGroup, FooterLink, FooterBrand, FooterIcon } from 'flowbite-svelte'
+	
+	import { LogoApple, LogoDiscord, LogoGithub, LogoTux, LogoWindows } from "svelte-ionicons"
 
 	type OS = "Linux" | "Windows" | "Mac"
 
@@ -28,7 +30,7 @@
 	}
 
 	const image = [
-		{ alt: "An image of BPO", src: "App.png"}
+		{ alt: "An image of BPO", src: "App-res.png"}
 	]
 </script>
 
@@ -80,6 +82,20 @@
 			</div>
 		</div>
 
-		<Gallery class="flex justify-center scale-75" items={image}></Gallery>
+		<Gallery class="flex justify-center mt-[4rem]" items={image}></Gallery>
+	</div>
+	  
+	<div class="footer">
+		<Footer>
+			<FooterCopyright href="/" by="Black Pearl Origin" year={2023} />
+			<FooterLinkGroup ulClass="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+				<FooterIcon href="https://github.com/BlackPearlOrigin">
+					<LogoGithub size="25px"></LogoGithub>
+				</FooterIcon>
+				<FooterIcon class="pl-5" href="https://discord.gg/vh3em37rqy">
+					<LogoDiscord size="25px"></LogoDiscord>
+				</FooterIcon>
+			</FooterLinkGroup>
+		</Footer>
 	</div>
 </main>
