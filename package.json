@@ -28,6 +28,7 @@
 		"classnames": "^2.3.2",
 		"flowbite": "^1.6.5",
 		"flowbite-svelte": "^0.37.4",
-		"sass": "^1.63.3"
+		"sass": "^1.63.3",
+		"svelte-ionicons": "^0.5.6"
 	}
 }

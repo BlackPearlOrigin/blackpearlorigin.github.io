@@ -1,10 +1,30 @@
-<script>
-	import { Alert, DarkMode, Gallery, Skeleton } from 'flowbite-svelte';
-	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte'
-	import { GradientButton } from 'flowbite-svelte';
+<script lang="ts">
+	import { 
+		Navbar, 
+		NavBrand, 
+		NavLi, 
+		NavUl, 
+		NavHamburger,
+		DarkMode, 
+		Gallery,
+		GradientButton 
+	} from 'flowbite-svelte'
+	import { LogoApple, LogoTux, LogoWindows } from "svelte-ionicons"
 
-	const downBtn = () => {
-		window.open("https://github.com/BlackPearlOrigin/blackpearlorigin", "_newpage")
+	type OS = "Linux" | "Windows" | "Mac"
+
+	const downBtn = (os: OS) => {
+		switch (os) {
+			case "Linux":
+				window.open("", "_newpage")
+				break;
+			case "Windows":
+				window.open("", "_newpage")
+				break;
+			case "Mac":
+				window.open("", "_newpage")
+				break;
+		}
 	}
 
 	const image = [
@@ -42,9 +62,21 @@
 		</p>
 		<p class="pt-3 text-xl font-medium text-center text-white">Black Pearl Origin (BPO) is a FOSS library management app with a built in search feature, plugin system and intuitive UI.</p>
 		
-		<div class="flex justify-center pt-7">
-			<div class="shadow-2xl">
-				<GradientButton on:click={downBtn} color="cyanToBlue" ><span class="text-xl text-white">Install BPO</span></GradientButton>
+		<div class="flex justify-center pt-[4rem]">
+			<div class="shadow-2xl ml-3 mr-3">
+				<GradientButton on:click={() => downBtn("Windows")} color="cyanToBlue" >
+					<LogoWindows class="mt-1 mb-1"  size="48px"></LogoWindows>
+				</GradientButton>
+			</div>
+			<div class="shadow-2xl ml-3 mr-3">
+				<GradientButton on:click={() => downBtn("Mac")} color="cyanToBlue" >
+					<LogoApple class="mt-1 mb-1"  size="48px"></LogoApple>
+				</GradientButton>
+			</div>
+			<div class="shadow-2xl ml-3 mr-3">
+				<GradientButton on:click={() => downBtn("Linux")} color="cyanToBlue" >
+					<LogoTux class="mt-1 mb-1"  size="48px"></LogoTux>
+				</GradientButton>
 			</div>
 		</div>
 
