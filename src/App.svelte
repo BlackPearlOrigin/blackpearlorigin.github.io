@@ -6,23 +6,48 @@
 		DarkMode,
 		Gallery,
 		GradientButton,
+		Button,
 	} from 'flowbite-svelte';
 
-	import { LogoApple, LogoTux, LogoWindows } from 'svelte-ionicons';
+	import {
+		LogoApple,
+		LogoTux,
+		LogoWindows,
+		LogoDiscord,
+		LogoGithub,
+	} from 'svelte-ionicons';
 
 	type OS = 'Linux' | 'Windows' | 'Mac';
+	type Social = 'Discord' | 'Github';
 
 	const downBtn = (os: OS) => {
 		switch (os) {
 			case 'Linux':
-				window.open('', '_newpage');
+				window.open(
+					'https://github.com/BlackPearlOrigin/blackpearlorigin/releases/latest/',
+					'_newpage'
+				);
 				break;
 			case 'Windows':
-				window.open('', '_newpage');
+				window.open(
+					'https://github.com/BlackPearlOrigin/blackpearlorigin/releases/latest/',
+					'_newpage'
+				);
 				break;
 			case 'Mac':
-				window.open('', '_newpage');
+				window.open(
+					'https://github.com/BlackPearlOrigin/blackpearlorigin/releases/latest/',
+					'_newpage'
+				);
 				break;
+		}
+	};
+
+	const socialLinks = (social: Social) => {
+		if (social === 'Discord') {
+			window.open('https://discord.gg/WpBr3hJVf5', '_newpage');
+		} else {
+			window.open('https://github.com/BlackPearlOrigin', '_newpage');
 		}
 	};
 
@@ -42,17 +67,41 @@
 				alt="Flowbite Logo"
 			/>
 		</NavBrand>
-		<NavHamburger on:click="{toggle}" />
-		<DarkMode />
+
+		<div class="flex row-auto">
+			<Button
+				on:click="{() => socialLinks('Discord')}"
+				class="bg-[#ffffff] border-transparent dark:bg-[#111827] dark:border-transparent 
+					   mr-3 pl-3 pr-3 dark:hover:bg-[#374151] dark:focus:ring-transparent
+					   hover:bg-[#f3f4f6] focus:ring-transparent"
+			>
+				<LogoDiscord
+					class="dark:fill-[#9ca3af] pl-0 pr-0 fill-[#6b7280]"
+				/>
+			</Button>
+			<Button
+				on:click="{() => socialLinks('Github')}"
+				class="bg-[#ffffff] border-transparent dark:bg-[#111827] dark:border-transparent 
+				   mr-3 pl-3 pr-3 dark:hover:bg-[#374151] dark:focus:ring-transparent
+				   hover:bg-[#f3f4f6] focus:ring-transparent"
+			>
+				<LogoGithub
+					class="dark:fill-[#9ca3af] pl-0 pr-0 fill-[#6b7280]"
+				/>
+			</Button>
+			<DarkMode />
+		</div>
 	</Navbar>
 	<div class="gradient-bg">
 		<div class="main-content">
-			<p class="text-6xl font-black text-center text-white">
+			<p class="text-6xl font-black text-center text-white pl-5 pr-5">
 				<span class="underline decoration-sky-300">Simple</span> and
 				<span class="underline decoration-sky-300">Effortless</span> Library
 				Management
 			</p>
-			<p class="pt-3 text-xl font-medium text-center text-white">
+			<p
+				class="pt-3 text-xl font-medium text-center text-white pl-5 pr-5"
+			>
 				Black Pearl Origin (BPO) is a FOSS game library management app
 				with a built in search feature, plugin system and intuitive UI.
 			</p>
@@ -84,7 +133,10 @@
 				</div>
 			</div>
 
-			<Gallery class="flex justify-center mt-[4rem]" items="{image}" />
+			<Gallery
+				class="flex justify-center mt-[4rem] pl-5 pr-5"
+				items="{image}"
+			/>
 		</div>
 	</div>
 </main>
