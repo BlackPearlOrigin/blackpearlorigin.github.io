@@ -2,29 +2,13 @@
 	import {
 		Navbar,
 		NavBrand,
-		NavLi,
-		NavUl,
 		NavHamburger,
 		DarkMode,
 		Gallery,
 		GradientButton,
 	} from 'flowbite-svelte';
-	import {
-		Footer,
-		FooterCopyright,
-		FooterLinkGroup,
-		FooterLink,
-		FooterBrand,
-		FooterIcon,
-	} from 'flowbite-svelte';
 
-	import {
-		LogoApple,
-		LogoDiscord,
-		LogoGithub,
-		LogoTux,
-		LogoWindows,
-	} from 'svelte-ionicons';
+	import { LogoApple, LogoTux, LogoWindows } from 'svelte-ionicons';
 
 	type OS = 'Linux' | 'Windows' | 'Mac';
 
