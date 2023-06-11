@@ -71,9 +71,9 @@
 		<div class="flex row-auto">
 			<Button
 				on:click="{() => socialLinks('Discord')}"
-				class="bg-[#ffffff] border-transparent dark:bg-[#111827] dark:border-transparent 
-					   mr-3 pl-3 pr-3 dark:hover:bg-[#374151] dark:focus:ring-transparent
-					   hover:bg-[#f3f4f6] focus:ring-transparent"
+				btnClass="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 
+				focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg 
+				text-sm p-2.5 mr-2"
 			>
 				<LogoDiscord
 					class="dark:fill-[#9ca3af] pl-0 pr-0 fill-[#6b7280]"
@@ -81,9 +81,9 @@
 			</Button>
 			<Button
 				on:click="{() => socialLinks('Github')}"
-				class="bg-[#ffffff] border-transparent dark:bg-[#111827] dark:border-transparent 
-				   mr-3 pl-3 pr-3 dark:hover:bg-[#374151] dark:focus:ring-transparent
-				   hover:bg-[#f3f4f6] focus:ring-transparent"
+				btnClass="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 
+				focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg 
+				text-sm p-2.5 mr-2"
 			>
 				<LogoGithub
 					class="dark:fill-[#9ca3af] pl-0 pr-0 fill-[#6b7280]"
