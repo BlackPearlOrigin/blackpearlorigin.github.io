@@ -6,10 +6,10 @@ $red: #f45866;
 
 body {
 	height: 100vh;
-	//background-color: lighten($accent, 4%);
 
-	background-repeat: space;
-	background-color: hsla(240, 53%, 64%, 1);
+	background-size: auto 988px;
+	background-repeat: no-repeat;
+	background-color: lighten($accent, 4%);
 	background-image: radial-gradient(
 			at 15% 90%,
 			hsla(145, 98%, 74%, 1) 0px,
@@ -24,14 +24,20 @@ main {
 	height: 100vh;
 }
 
-.main-content {
+.gradient-bg {
 	position: relative;
-	top: 180px;
-}
+	left: -32px;
+	top: 290px;
+	width: 100vw;
 
-.footer {
-	position: fixed;
-	left: 10px;
-	bottom: 10px;
-	right: 10px;
+	background-image: linear-gradient(
+		0deg,
+		lighten($accent, 4%) 0%,
+		rgba(255, 255, 255, 0) 100%
+	);
+
+	.main-content {
+		position: relative;
+		top: -130px;
+	}
 }
