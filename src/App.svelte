@@ -53,8 +53,8 @@
 				Management
 			</p>
 			<p class="pt-3 text-xl font-medium text-center text-white">
-				Black Pearl Origin (BPO) is a FOSS library management app with a
-				built in search feature, plugin system and intuitive UI.
+				Black Pearl Origin (BPO) is a FOSS game library management app
+				with a built in search feature, plugin system and intuitive UI.
 			</p>
 
 			<div class="flex justify-center pt-[4rem]">
