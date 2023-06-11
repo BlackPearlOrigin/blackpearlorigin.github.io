@@ -33,6 +33,7 @@ main {
 	background-image: linear-gradient(
 		0deg,
 		lighten($accent, 4%) 0%,
+		lighten($accent, 4%) 10%,
 		rgba(255, 255, 255, 0) 100%
 	);
 
