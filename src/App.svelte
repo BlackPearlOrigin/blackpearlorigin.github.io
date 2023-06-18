@@ -73,7 +73,7 @@
 	>
 		<NavBrand href="/">
 			<img
-				src="logo.svg"
+				src="logoLight.svg"
 				class="dark:invert mr-3 h-6 sm:h-9"
 				alt="Flowbite Logo"
 			/>
