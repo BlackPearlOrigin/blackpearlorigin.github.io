@@ -100,7 +100,7 @@
 					class="dark:fill-[#9ca3af] pl-0 pr-0 fill-[#6b7280]"
 				/>
 			</Button>
-			<DarkMode initialTheme="dark" class="invisible" />
+			<DarkMode initialTheme="dark" />
 		</div>
 	</Navbar>
 	<div class="gradient-bg">
@@ -179,12 +179,14 @@
 
 		<div class="flex flex-row justify-around mb-[8rem]">
 			<Card class="dark:bg-slate-800 ">
-				<span class="flex flex-row font-bold text-white text-3xl pb-3">
-					<LockOpenOutline size="32" />
+				<span
+					class="flex flex-row font-bold dark:text-white text-3xl pb-3"
+				>
+					<LockOpenOutline size="32" class="light:invert" />
 
 					<span class="pl-2"> Open Source </span>
 				</span>
-				<p class="font-normal text-white text-xl">
+				<p class="font-normal dark:text-white text-xl">
 					Black Pearl Origin (BPO) is an innovative app that embraces
 					the spirit of collaboration and transparency by being fully
 					open source. This means that developers and enthusiasts can
@@ -194,12 +196,14 @@
 			</Card>
 
 			<Card class="dark:bg-slate-800">
-				<span class="flex flex-row font-bold text-white text-3xl pb-3">
+				<span
+					class="flex flex-row font-bold dark:text-white text-3xl pb-3"
+				>
 					<ExtensionPuzzleOutline size="33" class="dark:invert" />
 
 					<span class="pl-2"> Plugin System </span>
 				</span>
-				<p class="font-normal text-white text-xl">
+				<p class="font-normal dark:text-white text-xl">
 					With BPO's powerful plugin system, finding games has never
 					been easier. Our app offers an extensive library of plugins
 					that allow you to search and discover your favorite games
@@ -210,12 +214,14 @@
 			</Card>
 
 			<Card class="dark:bg-slate-800">
-				<span class="flex flex-row font-bold text-white text-3xl pb-3">
+				<span
+					class="flex flex-row font-bold dark:text-white text-3xl pb-3"
+				>
 					<SparklesOutline size="33" class="dark:invert" />
 
 					<span class="pl-2"> Clean and Intuitive UI</span>
 				</span>
-				<p class="font-normal text-white text-xl">
+				<p class="font-normal dark:text-white text-xl">
 					BPO boasts a clean and intuitive user interface that makes
 					navigating the app a breeze. The carefully crafted design
 					prioritizes simplicity and elegance, ensuring that users can
@@ -226,12 +232,14 @@
 			</Card>
 
 			<Card class="dark:bg-slate-800">
-				<span class="flex flex-row font-bold text-white text-3xl pb-3">
+				<span
+					class="flex flex-row font-bold dark:text-white text-3xl pb-3"
+				>
 					<AccessibilityOutline size="33" class="dark:invert" />
 
 					<span class="pl-2"> Easy to Use</span>
 				</span>
-				<p class="font-normal text-white text-xl">
+				<p class="font-normal dark:text-white text-xl">
 					BPO takes pride in its user-friendly nature, making it
 					accessible to users of all skill levels. From downloading to
 					daily usage, our app streamlines the process, minimizing any
