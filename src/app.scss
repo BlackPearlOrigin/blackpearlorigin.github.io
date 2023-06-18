@@ -7,7 +7,7 @@ $red: #f45866;
 body {
 	height: 100vh;
 
-	background-size: auto 988px;
+	background-size: auto 1060px;
 	background-repeat: no-repeat;
 	background-color: lighten($accent, 4%);
 	background-image: radial-gradient(
@@ -27,18 +27,28 @@ main {
 .gradient-bg {
 	position: relative;
 	left: -32px;
-	top: 290px;
+	top: 360px;
 	width: 100vw;
 
-	background-image: linear-gradient(
-		0deg,
-		lighten($accent, 4%) 0%,
-		lighten($accent, 4%) 10%,
-		rgba(255, 255, 255, 0) 100%
-	);
-
-	.main-content {
+	.title-section {
 		position: relative;
-		top: -130px;
+		top: -160px;
+
+		background-image: linear-gradient(
+			0deg,
+			lighten($accent, 4%) 0%,
+			lighten($accent, 4%) 10%,
+			rgba(255, 255, 255, 0) 100%
+		);
+	}
+
+	.secondary-section {
+		position: relative;
+		top: -120px;
+
+		.logos img {
+			margin-left: 4rem;
+			margin-right: 4rem;
+		}
 	}
 }
